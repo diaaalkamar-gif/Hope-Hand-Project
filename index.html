@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Empowering communities through education, healthcare, and sustainable development worldwide." />
+  <title>Home | HopeHand</title>
+
+  <!-- Google Fonts: Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core & Shared Theme Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="hopehand.css" />
+  <link rel="stylesheet" href="impact.css" />
+  <link rel="stylesheet" href="stories.css" />
+  <link rel="stylesheet" href="get-involved.css" />
+  <link rel="stylesheet" href="validation.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Theme Setup Script (Runs immediately to prevent FOUC) -->
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- Unified Shared Header -->
+  <header class="header-wrapper">
+    <div class="navbar-container">
+      <!-- Brand Logo -->
+      <a href="hopehand.html" class="brand-logo">
+        <img src="images/logo.svg" alt="HopeHand Logo">
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu">
+        <li><a href="hopehand.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="#mission" class="nav-link">Mission</a></li>
+        <li><a href="program.html" class="nav-link">Programs</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#stories" class="nav-link">Stories</a></li>
+        <li><a href="#get-involved" class="nav-link">Get Involved</a></li>
+        <li><a href="donate.html" class="nav-link">Donate</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#donate" class="btn-donate-header">
+          <i class="fa-solid fa-heart"></i>
+          <span>Donate Now</span>
+        </a>
+        <button type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><i class="fa-solid fa-heart"></i> Together, We Make a Difference</div>
+          <h1>Change Lives, <span>One Community at a Time</span></h1>
+          <p>We believe every person deserves access to education, healthcare, and opportunity. Join us in building a world where communities thrive and futures are limitless.</p>
+          <div class="hero-actions">
+            <a href="donate.html" class="btn-primary"><i class="fa-solid fa-heart"></i> Donate Now</a>
+            <a href="#impact" class="btn-secondary"><i class="fa-solid fa-arrow-right"></i> See Our Impact</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>50,000+</strong><span>Lives Changed</span></div>
+            <div class="hero-stat"><strong>120+</strong><span>Communities</span></div>
+            <div class="hero-stat"><strong>15</strong><span>Countries</span></div>
+            <div class="hero-stat"><strong>$10M+</strong><span>Raised</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80" alt="Community members participating in a HopeHand program" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mission">
+      <div class="container">
+        <div class="page-shell">
+          <section class="hero-copy">
+            <span class="eyebrow">Our Mission</span>
+            <h2 style="font-size:clamp(2.2rem,4vw,3.25rem);font-weight:800;color:var(--text-main);line-height:1.15;margin-bottom:20px;">Building a Better World Together</h2>
+            <p class="description">
+              At HopeHand, we are driven by the belief that lasting change starts at the community level. Through grassroots partnerships and sustainable programs, we empower local leaders to create solutions that endure long after our direct involvement.
+            </p>
+            <p class="description">
+              Our approach combines evidence-based strategies with deep cultural understanding. We listen first, learn second, and act third, ensuring every initiative reflects the unique needs and aspirations of the people we serve.
+            </p>
+            <div class="benefits-list">
+              <article class="benefit-card">
+                <div class="icon-shell">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="benefit-content">
+                  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-main);margin-bottom:4px;">Education</h3>
+                  <p>Building schools, training teachers, and providing scholarships to unlock potential in every child.</p>
+                </div>
+              </article>
+              <article class="benefit-card">
+                <div class="icon-shell">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="benefit-content">
+                  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-main);margin-bottom:4px;">Healthcare</h3>
+                  <p>Delivering mobile clinics, clean water, and preventive care to communities with limited access.</p>
+                </div>
+              </article>
+              <article class="benefit-card">
+                <div class="icon-shell">
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="benefit-content">
+                  <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-main);margin-bottom:4px;">Sustainability</h3>
+                  <p>Promoting clean energy, reforestation, and sustainable farming for long-term community resilience.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="hero-image"></section>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="programs-section">
+        <div class="programs-header">
+          <span class="eyebrow">Programs</span>
+          <h2>How We Help</h2>
+          <p>Our four flagship programs address the most critical needs in underserved communities around the world.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="program-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Education for All</h3>
+            <p>Building schools, training teachers, and providing scholarships to ensure every child has access to quality education regardless of their background.</p>
+            <a href="program.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3>Health &amp; Wellness</h3>
+            <p>Operating mobile clinics, vaccination drives, and clean water projects to bring essential healthcare services to remote and underserved communities.</p>
+            <a href="program.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon active-icon">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <h3>Economic Empowerment</h3>
+            <p>Providing microloans, job training programs, and women's cooperatives to help families build sustainable livelihoods and break the cycle of poverty.</p>
+            <a href="program.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Environmental Action</h3>
+            <p>Leading reforestation initiatives, clean energy installations, and sustainable farming education to protect ecosystems and combat climate change.</p>
+            <a href="program.html" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+    </section>
+
+    <section id="impact" class="section">
+      <div class="intro">
+        <span class="eyebrow">Our Impact</span>
+        <h1>Numbers That Matter</h1>
+        <p>Every number represents a life changed, a community strengthened, and a future made brighter.</p>
+      </div>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <h2>50,000+</h2>
+          <p>Lives Impacted</p>
+        </article>
+        <article class="stat-card">
+          <h2>120+</h2>
+          <p>Schools Built</p>
+        </article>
+        <article class="stat-card">
+          <h2>500+</h2>
+          <p>Wells Drilled</p>
+        </article>
+        <article class="stat-card">
+          <h2>15</h2>
+          <p>Countries Served</p>
+        </article>
+      </section>
+
+      <section class="campaigns">
+        <h2>Active Campaigns</h2>
+        <div class="campaign">
+          <div class="campaign-title">
+            <span>Clean Water Initiative</span>
+            <span>78% of $500K</span>
+          </div>
+          <div class="progress-bar" aria-label="78% funded">
+            <div class="progress fill-78" data-progress="78%"></div>
+          </div>
+        </div>
+
+        <div class="campaign">
+          <div class="campaign-title">
+            <span>School Building Fund</span>
+            <span>45% of $2M</span>
+          </div>
+          <div class="progress-bar" aria-label="45% funded">
+            <div class="progress fill-45" data-progress="45%"></div>
+          </div>
+        </div>
+
+        <div class="campaign">
+          <div class="campaign-title">
+            <span>Medical Supplies</span>
+            <span>92% of $100K</span>
+          </div>
+          <div class="progress-bar" aria-label="92% funded">
+            <div class="progress fill-92" data-progress="92%"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="stories" class="stories-section">
+      <span class="eyebrow">Stories</span>
+      <h1>Lives Transformed</h1>
+      <p class="subtitle">Behind every statistic is a human story. Meet some of the people whose lives have been changed through our programs.</p>
+
+      <div class="cards-wrapper">
+        <button class="nav-button nav-left" aria-label="Previous">‹</button>
+
+        <div class="slider-container">
+          <div class="slider-track">
+            <article class="story-card">
+              <div class="quote-icon">“</div>
+              <p class="story-text">When HopeHand built a school in our village, everything changed. My daughter was the first girl in our family to learn to read. Now she dreams of becoming a doctor.</p>
+              <div class="story-footer">
+                <img src="images/amara.jpg" alt="Amara Diallo" class="avatar">
+                <div>
+                  <p class="name">Amara Diallo</p>
+                  <p class="role">Senegal, West Africa</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="quote-icon">“</div>
+              <p class="story-text">The clean water well transformed our community. Children stopped getting sick, women no longer walked miles for water, and we could focus on growing our farms.</p>
+              <div class="story-footer">
+                <img src="images/joseph.jpg" alt="Joseph Kariuki" class="avatar">
+                <div>
+                  <p class="name">Joseph Kariuki</p>
+                  <p class="role">Kenya, East Africa</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card story-card--featured">
+              <div class="quote-icon">“</div>
+              <p class="story-text">The microloan program gave me the start I needed. I built a small tailoring business that now employs five women from my village. We are lifting each other up.</p>
+              <div class="story-footer">
+                <img src="images/priya.jpg" alt="Priya Sharma" class="avatar">
+                <div>
+                  <p class="name">Priya Sharma</p>
+                  <p class="role">Rajasthan, India</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="quote-icon">“</div>
+              <p class="story-text">HopeHand gave me the tools to start my own small business. Two years later, I am employing three people from my community.</p>
+              <div class="story-footer">
+                <img src="images/samuel.jpg" alt="Samuel Okafor" class="avatar">
+                <div>
+                  <p class="name">Samuel Okafor</p>
+                  <p class="role">Program Graduate</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="quote-icon">“</div>
+              <p class="story-text">As a monthly donor, I appreciate the transparency. Quarterly reports show exactly how my contributions make a difference.</p>
+              <div class="story-footer">
+                <img src="images/elizabeth.jpg" alt="Elizabeth Warren" class="avatar">
+                <div>
+                  <p class="name">Elizabeth Warren</p>
+                  <p class="role">Recurring Donor</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="quote-icon">“</div>
+              <p class="story-text">Volunteering with HopeHand has been one of the most rewarding experiences of my life. The team is passionate and organized.</p>
+              <div class="story-footer">
+                <img src="images/kevin.jpg" alt="Kevin Martinez" class="avatar">
+                <div>
+                  <p class="name">Kevin Martinez</p>
+                  <p class="role">Volunteer since 2023</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="nav-button nav-right" aria-label="Next">›</button>
+      </div>
+
+      <div class="dots"></div>
+    </section>
+
+    <div class="container">
+      <section id="get-involved">
+        <div class="get-involved-container">
+          <div class="text">Get Involved</div>
+          <h2 class="font-size">Join Our Mission</h2>
+          <p class="gray-color">There are many ways to make a difference. Whether you give your time, your skills, or your support, every contribution matters.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Volunteer</h3>
+            <p>Give your time and skills to make a direct impact. Join field missions, teach workshops, or help with local events.</p>
+            <a href="contact.html" class="card-link">
+              Start Volunteering <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+            <h3>Fundraise</h3>
+            <p>Start a fundraising campaign for a cause you care about. Every dollar raised goes directly to the communities we serve.</p>
+            <a href="donate.html" class="card-link">
+              Start a Campaign <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Partner</h3>
+            <p>Corporate and organizational partnerships amplify our impact. Join us as a partner and help us reach more communities.</p>
+            <a href="contact.html" class="card-link">
+              Become a Partner <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="faq-header">
+          <div class="faq-label">FAQ</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about our organization, donations, and volunteer opportunities.</p>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <span class="faq-icon"></span>
+                Are my donations tax-deductible?
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, we are a registered 501(c)(3) nonprofit organization, and all donations are tax-deductible to the full extent allowed by law. You'll receive a receipt for your records immediately after donating.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="faq-icon"></span>
+                How are funds allocated?
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We maintain full financial transparency. Approximately 85% of all donations go directly to our programs and services. The remaining 15% covers essential operational and fundraising costs. Our annual reports are available on our website.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="faq-icon"></span>
+                How can I volunteer?
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We welcome volunteers of all skill levels! Visit our volunteer page to browse current opportunities, from on-the-ground fieldwork to remote support roles. We provide training and support for all volunteers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="faq-icon"></span>
+                Can I set up recurring donations?
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, monthly recurring donations are one of the most impactful ways to support our mission. You can set up, modify, or cancel recurring gifts at any time through your donor dashboard.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <span class="faq-icon"></span>
+                Do you work internationally?
+                <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, we operate programs in 12 countries across 3 continents. Our international programs focus on education, clean water access, and sustainable community development, all managed by local teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="donate" class="donation-card">
+      <div class="card-header">
+        <h1>Every Dollar Makes a Difference</h1>
+        <p>Your generosity directly funds life-changing programs in communities that need it most.</p>
+      </div>
+
+      <div class="center">
+        <span class="meaning"><strong class="number">$25</strong> = School supplies for a child</span>
+        <span class="meaning"><strong class="number">$50</strong> = Clean water for a family</span>
+        <span class="meaning"><strong class="number">$100</strong> = Medical care for a village</span>
+      </div>
+
+      <div class="amount-options amount-row">
+        <button type="button" class="amount-btn" data-amount="25">$25</button>
+        <button type="button" class="amount-btn" data-amount="50">$50</button>
+        <button type="button" class="amount-btn active" data-amount="100">$100</button>
+        <button type="button" class="amount-btn" data-amount="250">$250</button>
+        <button type="button" class="amount-btn" data-amount="custom">Custom</button>
+      </div>
+
+      <div class="custom-input-wrapper" id="customInputWrapper" style="display: none;">
+        <input type="number" id="customAmount" class="custom-amount-input" placeholder="Enter custom amount" min="1" step="1" aria-label="Enter custom donation amount">
+      </div>
+
+      <div class="center">
+        <button type="button" class="donate-primary">Donate Now</button>
+      </div>
+
+      <div class="color center">
+        <span class="space"><i class="fa-solid fa-shield-halved"></i> 100% Tax Deductible</span>
+        <span><i class="fa-solid fa-star"></i> Charity Navigator 4-Star</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hope-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <a href="hopehand.html" class="footer-brand-logo">
+            <img src="images/logo-light.svg" alt="HopeHand Logo">
+          </a>
+          <p class="footer-description">
+            Empowering communities through education, healthcare, and sustainable development worldwide.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">PROGRAMS</h3>
+          <ul class="footer-links">
+            <li><a href="program.html">Education</a></li>
+            <li><a href="program.html">Healthcare</a></li>
+            <li><a href="program.html">Economic Empowerment</a></li>
+            <li><a href="program.html">Environment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">ORGANIZATION</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="impact.html">Annual Report</a></li>
+            <li><a href="blog.html">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">SUPPORT</h3>
+          <ul class="footer-links">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="get-involved.html">Volunteer</a></li>
+            <li><a href="get-involved.html">Partner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-newsletter">
+          <h3 class="footer-heading">STAY UPDATED</h3>
+          <p class="footer-newsletter-text">
+            Get updates on our programs and the communities we serve.
+          </p>
+          <form class="footer-newsletter-form" action="#" method="post">
+            <input type="email" class="footer-email-input" placeholder="Enter your email" required aria-label="Enter your email">
+            <button type="submit" class="footer-subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          © 2026 HopeHand Foundation. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="style-guide.html">Style Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script>
+    document.documentElement.style.scrollBehavior = 'smooth';
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          var offset = document.querySelector('.header-wrapper').offsetHeight;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+    if (window.location.hash) {
+      setTimeout(function() {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          var offset = document.querySelector('.header-wrapper').offsetHeight;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  </script>
+  <script src="stories.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="validation.js"></script>
+</body>
+</html>

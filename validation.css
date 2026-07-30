@@ -1,0 +1,371 @@
+/* ==========================================================================
+   Form Validation Styles
+   ========================================================================== */
+
+.validation-error {
+    color: #dc2626;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+    line-height: 1.3;
+    animation: validationFadeIn 0.2s ease;
+}
+
+.footer-col-newsletter .validation-error,
+.footer-newsletter-form .validation-error,
+.newsletter-form .validation-error {
+    color: #fca5a5;
+    margin-top: 8px;
+    font-weight: 600;
+    width: 100% !important;
+    flex-basis: 100% !important;
+}
+
+/* Ensure flex containers wrap validation messages */
+.footer-newsletter-form,
+.newsletter-form {
+    flex-wrap: wrap !important;
+}
+
+/* Inline Form Success Banner */
+.form-success-banner {
+    background-color: rgba(5, 150, 105, 0.12);
+    border: 1px solid rgba(5, 150, 105, 0.3);
+    color: #059669;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.925rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: validationFadeIn 0.3s ease;
+}
+
+[data-theme="dark"] .form-success-banner {
+    background-color: rgba(16, 185, 129, 0.18);
+    border-color: rgba(16, 185, 129, 0.4);
+    color: #34d399;
+}
+
+/* Inline Form Error Banner */
+.form-error-banner {
+    background-color: rgba(220, 38, 38, 0.12);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    color: #dc2626;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.925rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: validationFadeIn 0.3s ease;
+}
+
+[data-theme="dark"] .form-error-banner {
+    background-color: rgba(239, 68, 68, 0.18);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
+}
+
+.footer-col-newsletter .form-success-banner,
+.footer-newsletter-form .form-success-banner,
+.newsletter-form .form-success-banner {
+    background-color: rgba(16, 185, 129, 0.22);
+    border-color: rgba(16, 185, 129, 0.5);
+    color: #a7f3d0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    padding: 10px 14px;
+    width: 100% !important;
+    flex-basis: 100% !important;
+}
+
+.footer-col-newsletter .form-error-banner,
+.footer-newsletter-form .form-error-banner,
+.newsletter-form .form-error-banner {
+    background-color: rgba(239, 68, 68, 0.22);
+    border-color: rgba(239, 68, 68, 0.5);
+    color: #fca5a5;
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    padding: 10px 14px;
+    width: 100% !important;
+    flex-basis: 100% !important;
+}
+
+@keyframes validationFadeIn {
+    from { opacity: 0; transform: translateY(-3px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Invalid field borders */
+.field-invalid,
+.form-control.field-invalid,
+.contact-form .form-control.field-invalid {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15) !important;
+}
+
+.field-invalid:focus,
+.form-control.field-invalid:focus,
+.contact-form .form-control.field-invalid:focus {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25) !important;
+}
+
+/* Valid field borders keep normal border */
+.field-valid {
+    /* Retain standard field border */
+}
+
+/* Toast for newsletter / donation success */
+.validate-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #059669;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(5, 150, 105, 0.35);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
+    pointer-events: none;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.validate-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Donation amount error */
+.donation-amount-error {
+    color: #fca5a5;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    display: block;
+    text-align: center;
+    animation: validationFadeIn 0.25s ease;
+}
+
+/* Contact Form Toast Notification */
+.toast-notification {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.35), 0 8px 16px -6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  width: fit-content;
+  max-width: calc(100vw - 48px);
+  transform: translateX(calc(100% + 40px));
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.4s ease,
+              visibility 0.4s ease;
+  pointer-events: none;
+}
+
+.toast-notification.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   Donation Success Modal & Feedback Styles
+   ========================================================================== */
+
+.donation-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.donation-modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.donation-modal-card {
+  position: relative;
+  background: var(--card-bg, #ffffff);
+  color: var(--text-color, #0f172a);
+  width: 100%;
+  max-width: 480px;
+  padding: 36px 28px 32px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transform: scale(0.92) translateY(15px);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] .donation-modal-card {
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.donation-modal-overlay.show .donation-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.donation-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #64748b;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.donation-modal-close:hover {
+  background-color: rgba(100, 116, 139, 0.15);
+  color: #0f172a;
+}
+
+[data-theme="dark"] .donation-modal-close:hover {
+  color: #ffffff;
+}
+
+.donation-modal-icon-wrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.25));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation-modal-icon-wrap i {
+  font-size: 2.2rem;
+  color: #059669;
+  animation: heartPulse 1.5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+[data-theme="dark"] .donation-modal-icon-wrap i {
+  color: #10b981;
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.18); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.14); }
+  70% { transform: scale(1); }
+}
+
+.donation-modal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.donation-modal-amount-badge {
+  display: inline-block;
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+  font-weight: 800;
+  font-size: 1.25rem;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+[data-theme="dark"] .donation-modal-amount-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.donation-modal-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+[data-theme="dark"] .donation-modal-body {
+  color: #94a3b8;
+}
+
+.donation-modal-btn-primary {
+  width: 100%;
+  background-color: #059669;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.donation-modal-btn-primary:hover {
+  background-color: #047857;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.45);
+}
+
+.donation-modal-btn-primary:active {
+  transform: translateY(0);
+}
+

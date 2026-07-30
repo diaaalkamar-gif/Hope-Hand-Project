@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | HopeHand</title>
+
+  <!-- Google Fonts: Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="validation.css">
+
+  <!-- Theme Setup Script -->
+  <script src="theme.js"></script>
+</head>
+
+<body>
+
+  <!-- Unified Shared Header -->
+  <header class="header-wrapper">
+    <div class="navbar-container">
+      <a href="hopehand.html" class="brand-logo">
+        <img src="images/logo.svg" alt="HopeHand Logo">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="hopehand.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="hopehand.html#mission" class="nav-link">Mission</a></li>
+        <li><a href="program.html" class="nav-link">Programs</a></li>
+        <li><a href="hopehand.html#impact" class="nav-link">Impact</a></li>
+        <li><a href="hopehand.html#stories" class="nav-link">Stories</a></li>
+        <li><a href="hopehand.html#get-involved" class="nav-link">Get Involved</a></li>
+        <li><a href="donate.html" class="nav-link">Donate</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="hopehand.html#donate" class="btn-donate-header">
+          <i class="fa-solid fa-heart"></i>
+          <span>Donate Now</span>
+        </a>
+        <button type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="blog-container text-center">
+        <span class="hero-badge">Our Blog</span>
+        <h1 class="hero-title">Insights &amp; Updates</h1>
+        <p class="hero-subtitle">Stay up to date with the latest tips, trends, and insights from our team.</p>
+        <nav class="hero-breadcrumb">
+          <a href="hopehand.html">Home</a>
+          <span class="sep">/</span>
+          <span class="current">Blog</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="blog-container">
+
+        <div class="search-wrap">
+          <div class="search-box">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="blogSearch" placeholder="Search articles...">
+          </div>
+        </div>
+
+        <div class="filter-wrap" id="filterWrap">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="impact">Impact</button>
+          <button class="filter-btn" data-filter="volunteers">Volunteers</button>
+          <button class="filter-btn" data-filter="community">Community</button>
+          <button class="filter-btn" data-filter="fundraising">Fundraising</button>
+          <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+          <button class="filter-btn" data-filter="governance">Governance</button>
+        </div>
+
+        <div class="row blog-grid" id="blogGrid">
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="impact"
+            data-title="The Impact of Clean Water Access">
+            <article class="blog-card">
+              <a href="assets/pages/impact of clean water access.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/The Impact of Clean Water Access.jpg" alt="The Impact of Clean Water Access">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Impact</span>
+                    <span class="card-date">Feb 15, 2026</span>
+                  </div>
+                  <h3 class="card-title">The Impact of Clean Water Access</h3>
+                  <p class="card-desc">How clean water initiatives are transforming communities and saving lives around
+                    the world.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">8 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="volunteers"
+            data-title="Volunteer Spotlight: Making a Difference">
+            <article class="blog-card">
+              <a href="assets/pages/volunteer spotlight making a difference.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/Volunteer Spotlight Making a Difference.jpg"
+                    alt="Volunteer Spotlight: Making a Difference">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Volunteers</span>
+                    <span class="card-date">Feb 8, 2026</span>
+                  </div>
+                  <h3 class="card-title">Volunteer Spotlight: Making a Difference</h3>
+                  <p class="card-desc">Celebrating the incredible volunteers who dedicate their time and skills to our
+                    mission.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">6 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="community"
+            data-title="5 Ways to Support Your Community">
+            <article class="blog-card">
+              <a href="assets/pages/5 ways to support your community.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/5 Ways to Support Your Community.jpg" alt="5 Ways to Support Your Community">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Community</span>
+                    <span class="card-date">Jan 28, 2026</span>
+                  </div>
+                  <h3 class="card-title">5 Ways to Support Your Community</h3>
+                  <p class="card-desc">Simple yet powerful ways you can make a meaningful difference in your local
+                    community.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">5 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="fundraising"
+            data-title="Fundraising Ideas That Actually Work">
+            <article class="blog-card">
+              <a href="assets/pages/fundraising ideas that actually work.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/Fundraising Ideas That Actually Work.jpg"
+                    alt="Fundraising Ideas That Actually Work">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Fundraising</span>
+                    <span class="card-date">Jan 15, 2026</span>
+                  </div>
+                  <h3 class="card-title">Fundraising Ideas That Actually Work</h3>
+                  <p class="card-desc">Creative and proven fundraising strategies that engage donors and drive real
+                    results.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">7 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="sustainability"
+            data-title="Sustainable Development in Action">
+            <article class="blog-card">
+              <a href="assets/pages/sustainable development in action.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/Sustainable Development in Action.jpg" alt="Sustainable Development in Action">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Sustainability</span>
+                    <span class="card-date">Jan 5, 2026</span>
+                  </div>
+                  <h3 class="card-title">Sustainable Development in Action</h3>
+                  <p class="card-desc">Real stories of sustainable development projects creating lasting change in
+                    underserved regions.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">6 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 blog-col" data-category="governance"
+            data-title="Why Transparency Matters in Nonprofits">
+            <article class="blog-card">
+              <a href="assets/pages/why transparency matters in nonprofits.html" class="card-link">
+                <div class="card-img">
+                  <img src="assets/images/why transparency matters in nonprofits.jpg"
+                    alt="Why Transparency Matters in Nonprofits">
+                </div>
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-badge">Governance</span>
+                    <span class="card-date">Dec 20, 2025</span>
+                  </div>
+                  <h3 class="card-title">Why Transparency Matters in Nonprofits</h3>
+                  <p class="card-desc">Why donor trust depends on transparency and how nonprofits can lead by example.</p>
+                  <div class="card-author">
+                    <img src="assets/images/Grace Okafor.jpg" alt="Grace Okafor">
+                    <div>
+                      <div class="author-name">Grace Okafor</div>
+                      <div class="author-read">4 min read</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+        </div>
+
+        <p class="no-results" id="noResults">No articles found.</p>
+
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="blog-container">
+        <div class="newsletter-card">
+          <span class="newsletter-badge">Newsletter</span>
+          <h2 class="newsletter-title">Stay in the Loop</h2>
+          <p class="newsletter-text">Subscribe to our newsletter for the latest articles, tips, and updates delivered
+            straight to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required aria-label="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Unified Shared Footer -->
+  <footer class="hope-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <a href="hopehand.html" class="footer-brand-logo">
+            <img src="images/logo-light.svg" alt="HopeHand Logo">
+          </a>
+          <p class="footer-description">
+            Empowering communities through education, healthcare, and sustainable development worldwide.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">PROGRAMS</h3>
+          <ul class="footer-links">
+            <li><a href="program.html">Education</a></li>
+            <li><a href="program.html">Healthcare</a></li>
+            <li><a href="program.html">Economic Empowerment</a></li>
+            <li><a href="program.html">Environment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">ORGANIZATION</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="impact.html">Annual Report</a></li>
+            <li><a href="blog.html">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">SUPPORT</h3>
+          <ul class="footer-links">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="get-involved.html">Volunteer</a></li>
+            <li><a href="get-involved.html">Partner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-newsletter">
+          <h3 class="footer-heading">STAY UPDATED</h3>
+          <p class="footer-newsletter-text">
+            Get updates on our programs and the communities we serve.
+          </p>
+          <form class="footer-newsletter-form" action="#" method="post">
+            <input type="email" class="footer-email-input" placeholder="Enter your email" required aria-label="Enter your email">
+            <button type="submit" class="footer-subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          © 2026 HopeHand Foundation. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="style-guide.html">Style Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="blog.js"></script>
+  <script src="validation.js"></script>
+</body>
+
+</html>

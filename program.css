@@ -1,0 +1,254 @@
+/* program.css */
+
+.page-banner {
+  background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.page-banner h1 {
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.banner-sub {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  color: var(--primary-100);
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--primary-100);
+}
+
+.breadcrumb a {
+  color: var(--primary-100);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb span {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.section-title h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.programs-grid-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bg-main);
+}
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.program-card {
+  background-color: var(--bg-card) !important;
+  width: calc(33.333% - 17px);
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg);
+  padding: 32px 26px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-500) !important;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-50);
+  color: var(--primary-600);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .card-icon {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--primary-500);
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-list li i {
+  color: var(--primary-500);
+  font-size: 12px;
+}
+
+.approach-section {
+  background-color: var(--bg-muted);
+  padding: 80px 20px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  text-align: center;
+  width: calc(25% - 18px);
+  padding: 24px 16px;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  background-color: var(--primary-600);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 0 auto 16px;
+}
+
+.step-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto 28px;
+  color: var(--primary-100);
+}
+
+.btn-donate {
+  display: inline-block;
+  background-color: #ffffff;
+  color: var(--primary-600);
+  padding: 12px 32px;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.btn-donate:hover {
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .program-card {
+    width: calc(50% - 13px);
+  }
+
+  .step-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 600px) {
+  .program-card,
+  .step-card {
+    width: 100%;
+  }
+}

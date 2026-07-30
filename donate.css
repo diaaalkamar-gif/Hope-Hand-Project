@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Donate Page Styling (Matching Modern UI & Theme System)
+   ========================================================================== */
+
+/* 1. Header Banner */
+.donate-header {
+    background-color: var(--primary-700, #047857);
+    width: 100%;
+    padding: 64px 24px 50px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.donate-header h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.25;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.donate-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d1fae5;
+    margin: 0 auto 20px auto;
+    font-weight: 400;
+    max-width: 620px;
+}
+
+.bottom-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.bottom-header a {
+    color: #a7f3d0;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.bottom-header a:hover {
+    color: #ffffff;
+}
+
+.light-green-color {
+    color: #6ee7b7;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+/* 2. Main Container & Header of Cards */
+.cards-container {
+    width: 100%;
+    background-color: var(--bg-main);
+    padding: 56px 24px 72px;
+    transition: background-color var(--transition-normal);
+}
+
+.cards-header {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 48px auto;
+    text-align: center;
+}
+
+.cards-header .text {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 18px;
+    border-radius: var(--radius-full, 9999px);
+    background-color: rgba(16, 185, 129, 0.16);
+    color: var(--primary-500, #10b981);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.cards-header h2.font-size {
+    font-size: 2.35rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.cards-header p.gray-color {
+    color: var(--text-muted);
+    font-size: 1.02rem;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* 3. Cards Grid Layout */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* 4. Pricing Card Design */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 28px 28px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-hover);
+}
+
+.border-card {
+    border: 1px solid var(--border-color);
+}
+
+/* Featured Champion Card */
+.champion-card {
+    border: 2px solid var(--primary-500, #10b981) !important;
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.18);
+}
+
+.champion-card-header {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.champion-card-text {
+    display: inline-flex;
+    padding: 4px 18px;
+    border-radius: var(--radius-full, 9999px);
+    background-color: var(--primary-600, #059669);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.35);
+}
+
+/* Card Header Content */
+.card-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.card-h4 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 4px;
+    padding-left: 0;
+}
+
+.card-sub {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.price-block {
+    padding-top: 18px;
+    text-align: center;
+}
+
+.price {
+    font-size: 3.25rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text-main);
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price small {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.tax-badge {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+/* Features List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    flex-grow: 1;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    padding: 7px 0;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.feature-list li.wrong-icon {
+    color: var(--text-muted);
+    opacity: 0.45;
+}
+
+.true-icon {
+    color: var(--primary-500, #10b981);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.wrong-icon {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+/* Action Buttons */
+.btn-center {
+    width: 100%;
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    background-color: var(--bg-card-hover, #1c2b54);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: var(--radius-sm, 8px);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn:hover {
+    background-color: var(--border-hover);
+    color: var(--text-main);
+    transform: translateY(-1px);
+}
+
+.btn-champion {
+    background-color: var(--primary-600, #059669);
+    color: #ffffff !important;
+}
+
+.btn-champion:hover {
+    background-color: var(--primary-700, #047857);
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.4);
+}
+
+/* Footer Note Below Cards */
+.cards-footer {
+    padding-top: 36px;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.cards-footer p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 5. FAQ Section Container */
+.container {
+    padding: 0 24px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.faq-section {
+    background: transparent;
+    padding: 48px 0 60px;
+    text-align: center;
+}
+
+.faq-label {
+    display: inline-flex;
+    padding: 6px 16px;
+    border-radius: var(--radius-full, 9999px);
+    background-color: rgba(16, 185, 129, 0.16);
+    color: var(--primary-500, #10b981);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.faq-header h2 {
+    color: var(--text-main);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+}
+
+.faq-header p {
+    font-size: 1.02rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto 32px auto;
+}
